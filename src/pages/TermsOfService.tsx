@@ -28,9 +28,7 @@ const TermsOfService = () => {
                 </p>
                 
                 <h3 className="text-lg font-semibold">מטרת האפליקציה</h3>
-                <p>
-                  חתיכת סיפור היא רשת של ערבות הדדית, שמטרתה לאפשר למשתמשים לקבל ולהעניק ברכות ותפילות. כל בקשה שלך הופכת לברכה של מישהו אחר.
-                </p>
+            
                 
                 <h3 className="text-lg font-semibold">פרטיות</h3>
                 <p>

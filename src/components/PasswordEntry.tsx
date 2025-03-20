@@ -19,10 +19,10 @@ const PasswordEntry: React.FC<PasswordEntryProps> = ({
   const [password, setPassword] = useState("");
   const [termsAgreed, setTermsAgreed] = useState(false);
   const navigate = useNavigate();
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (password === defaultPassword && termsAgreed) {
       toast.success("ברוך הבא לחתיכת סיפור!");
       onSuccess();
@@ -37,7 +37,7 @@ const PasswordEntry: React.FC<PasswordEntryProps> = ({
     <form onSubmit={handleSubmit} className="space-y-6 w-full">
       <div className="space-y-2">
         <Label htmlFor="password" className="text-right text-base">
-           סיסמה לכניסת קהל
+          סיסמה לכניסת קהל
         </Label>
         <Input
           id="password"
@@ -49,10 +49,10 @@ const PasswordEntry: React.FC<PasswordEntryProps> = ({
           required
         />
       </div>
-      
+
       <div className="flex items-center justify-end space-x-2 space-x-reverse">
-        <Checkbox 
-          id="terms" 
+        <Checkbox
+          id="terms"
           checked={termsAgreed}
           onCheckedChange={(checked) => setTermsAgreed(checked === true)}
         />
@@ -63,8 +63,8 @@ const PasswordEntry: React.FC<PasswordEntryProps> = ({
           >
             אני מסכים
           </Label>
-          <Button 
-            variant="link" 
+          <Button
+            variant="link"
             className="p-0 h-auto text-sm font-medium text-primary"
             onClick={(e) => {
               e.preventDefault();
@@ -75,9 +75,9 @@ const PasswordEntry: React.FC<PasswordEntryProps> = ({
           </Button>
         </div>
       </div>
-      
-      <Button 
-        type="submit" 
+
+      <Button
+        type="submit"
         className="w-full"
         disabled={!termsAgreed}
       >

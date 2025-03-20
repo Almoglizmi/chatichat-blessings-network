@@ -47,7 +47,6 @@ const Index = () => {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="mt-6 text-center text-sm text-muted-foreground"
           >
-            <p>רשת של ערבות הדדית, שבה כל בקשה שלך הופכת לברכה של מישהו אחר</p>
           </motion.div>
         </div>
       </div>
