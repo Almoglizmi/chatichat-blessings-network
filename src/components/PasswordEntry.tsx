@@ -37,7 +37,7 @@ const PasswordEntry: React.FC<PasswordEntryProps> = ({
     <form onSubmit={handleSubmit} className="space-y-6 w-full">
       <div className="space-y-2">
         <Label htmlFor="password" className="text-right text-base">
-           1סיסמה לכניסת קהל
+           סיסמה לכניסת קהל
         </Label>
         <Input
           id="password"
